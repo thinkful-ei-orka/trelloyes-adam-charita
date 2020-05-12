@@ -2,8 +2,7 @@ import React from 'react';
 import STORE from './store';
 import List from './List';
 
-function App(store=STORE) {
-  console.log(STORE.lists)
+function App(store=STORE){
   return (
     <main className='App'>
       <header className='App-header'>
