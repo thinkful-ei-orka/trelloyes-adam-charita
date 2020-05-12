@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Card(title,content,Key){
+function Card(props){
   return (
-    <div className='Card' key={`card-${Key}`}>
+    <div className='Card'>
       <button type='button'>delete</button>
-      <h3>{title}</h3>
-      <p>{content}</p>
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
     </div>
   )
 }

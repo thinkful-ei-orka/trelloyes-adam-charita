@@ -10,7 +10,10 @@ function App(store=STORE) {
         <h1>Trelloyes</h1>
       </header>
       <div className='App-list'>
-        {STORE.lists.map((obj,k)=>List(obj.header,obj.cardIds,k))}
+        {STORE.lists.map((obj,k)=><List
+        header={obj.header}
+        cards={obj.cardIds}
+        key={k} />)}
       </div>
     </main>
   );
